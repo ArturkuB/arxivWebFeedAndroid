@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/chooseFieldFragment">
+
+    <fragment
+        android:id="@+id/chooseFieldFragment"
+        android:name="com.example.pracalicencjacka.fragments.CategoryFragment"
+        android:label="fragment_choose_field"
+        tools:layout="@layout/fragment_category" >
+        <action
+            android:id="@+id/action_chooseFieldFragment_to_subFieldFragment"
+            app:destination="@id/subFieldFragment" />
+        <action
+            android:id="@+id/action_chooseFieldFragment_to_subscribedFieldsFragment"
+            app:destination="@id/subscribedFieldsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/publicationsFragment"
+        android:name="com.example.pracalicencjacka.fragments.PublicationFragment"
+        android:label="fragment_publications"
+        tools:layout="@layout/fragment_publications" >
+        <action
+            android:id="@+id/action_publicationsFragment_to_subscribedFieldsFragment"
+            app:destination="@id/subscribedFieldsFragment" />
+        <action
+            android:id="@+id/action_publicationsFragment_to_subFieldFragment"
+            app:destination="@id/subFieldFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/subFieldFragment"
+        android:name="com.example.pracalicencjacka.fragments.SubcategoryFragment"
+        android:label="fragment_sub_field"
+        tools:layout="@layout/fragment_subcategory" >
+        <action
+            android:id="@+id/action_subFieldFragment_to_publicationsFragment"
+            app:destination="@id/publicationsFragment" />
+        <action
+            android:id="@+id/action_subFieldFragment_to_subscribedFieldsFragment"
+            app:destination="@id/subscribedFieldsFragment" />
+        <action
+            android:id="@+id/action_subFieldFragment_to_chooseFieldFragment"
+            app:destination="@id/chooseFieldFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/subscribedFieldsFragment"
+        android:name="com.example.pracalicencjacka.fragments.SubscribedSubsFragment"
+        android:label="fragment_subscribed_fields"
+        tools:layout="@layout/fragment_subscribed_sub" >
+        <action
+            android:id="@+id/action_subscribedFieldsFragment_to_chooseFieldFragment"
+            app:destination="@id/chooseFieldFragment" />
+        <action
+            android:id="@+id/action_subscribedFieldsFragment_to_publicationsFragment"
+            app:destination="@id/publicationsFragment" />
+    </fragment>
+</navigation>

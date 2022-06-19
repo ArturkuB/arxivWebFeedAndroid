@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">arXiv Web Feed</string>
+    <string name="mathematics">Mathematics</string>
+    <string name="computerScience">Computer Science</string>
+    <string name="biology">Quantitative Biology</string>
+    <string name="finance">Quantitative Finance</string>
+    <string name="statistics">Statistics</string>
+    <string name="eeass">Electrical Engineering and Systems Science</string>
+    <string name="economics">Economics</string>
+    <string name="physics">Physics</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="DialogTitle">Information</string>
+    <string name="DialogText">You can subscribe up to 10 different subcategories. List of publications from subscribed subcategories are stored inside a database and updated once in a while. Unsubscribing to a certain subcategory causes all data to be removed and parsing is required to see a list of publications.</string>
+
+
+</resources>

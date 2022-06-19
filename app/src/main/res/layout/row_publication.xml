@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:foreground="?android:attr/selectableItemBackground"
+app:cardElevation="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/titlePubs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:gravity="center_vertical"
+            android:text="Electrical Engineering and Systems Science"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textSize="22sp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/authorsPubs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/cardview_dark_background"
+            android:layout_marginLeft="23dp"
+            android:layout_marginRight="23dp"
+            android:text="Electrical Engineering and Systems Science"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
